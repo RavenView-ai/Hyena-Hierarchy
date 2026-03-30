@@ -15,7 +15,7 @@ class HyenaWithEWC(nn.Module):
         super(HyenaWithEWC, self).__init__()
         self.d_model = d_model
         self.n_layers = n_layers
-        self.vocab_size = vocab_size
+        self.vocab_size = 0
         self.kernel_size = kernel_size
 
         # Create Hyena-like layers (simplified conv + gating + FFN)
